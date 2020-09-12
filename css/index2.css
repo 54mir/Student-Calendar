@@ -116,54 +116,12 @@ carousel-inner{
     }
 }
 
-
-/* .background{
-    background-color: #F05D5E;
-    width: 100%;
-    height: 100%;
-} */
-
-body{
-    background-color: #ddd;
-    background-image: url("images/mathBoard3.jpg") !important;
-}
-
-.carousel{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* .bg-math{
-    background-color: #1AC4C7;
-    /* background-image: url("images/mathBoard3.jpg"); 
+.bg-math{
+    background-image: url("images/mathBoard3.jpg");
     background-size: cover;
     
-} */
+}
 
 .gs-font{
     font-family: 'Grandstander', cursive;
 }
-
-.slideshow{
-    height: 50vh;
-    width: 100%;
-    background-color: 	hsl(42, 100%, 65%);
-}
-.slide-header{
-    height: 15%;
-    background-color: 	hsl(42, 100%, 75%);
-}
-.slide-time{
-    height: 10%;
-    background-color:   hsl(42, 100%, 70%);
-}
-
-.title{
-    font-family: 'Grandstander', cursive;
-    text-transform: uppercase;
-    font-size: 55px;
-}
-
-.description{
-    font-family: 'Roboto', sans-serif;
-}
-
