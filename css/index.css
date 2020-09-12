@@ -21,6 +21,9 @@
     color: #272932;
 }
 
+.bg-teal{
+    background-color: #1AC4C7; 
+}
 .nav-bg{
     background-color:  #E7ECEF;
 }
@@ -52,11 +55,14 @@
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #E7ECEF;
   text-align: center;
 }
 
+div.carousel-caption * {
+    color: #E7ECEF;
+}
 .w-100{
     width: 100%;
     height: 75vh;
 }
+
