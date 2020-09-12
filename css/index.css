@@ -101,7 +101,12 @@ a:hover {
 }
 
 .carousel-position{
-    margin-top: 8vh
+/*    margin-top: 8vh*/
+    height: 100%;
+    padding-top: 8vh
+}
+carousel-inner{
+    height: 100%;
 }
 
 @media (max-width: 600px){
@@ -111,6 +116,6 @@ a:hover {
     }
 }
 
-.bg-img-math{
+.bg-math{
     background-image: url("images/mathBoard3.jpg")
 }
