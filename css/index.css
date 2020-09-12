@@ -66,3 +66,8 @@ div.carousel-caption * {
     height: 75vh;
 }
 
+.grandstand-font{
+/*    font-family: 'Grandstander', cursive;*/
+font-family: 'Londrina Outline', cursive;
+    font-size: 10vw
+}
