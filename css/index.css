@@ -117,5 +117,11 @@ carousel-inner{
 }
 
 .bg-math{
-    background-image: url("images/mathBoard3.jpg")
+    background-image: url("images/mathBoard3.jpg");
+    background-size: cover;
+    
+}
+
+.gs-font{
+    font-family: 'Grandstander', cursive;
 }
