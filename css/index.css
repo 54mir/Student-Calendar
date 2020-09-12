@@ -1,20 +1,27 @@
-/*
+
+/*Color Scheme Definitions*/
+.red {
+    color: #F05D5E;
+}
+.light-blue{
+    color: #E7ECEF;
+}
+.blue-green{
+    color: #1AC4C7;
+}
+.font-black{
+    color: #272932;
+}
+.pale-brown{
+    color: #D8A47F;
+}
+
+/*Sets the color of font on all pages to color-scheme black*/
 * {
-    color: #252422;
+    color: #272932;
 }
 
-.btn-red {
-  background-color: #E5625E;
-}
 
-.jumbotron {
-    margin-top: 1vh
-}
-.card{
-    margin-top:1vh;
-    margin-bottom: 1vh;
-}
-*/
 
 .carousel-caption{
   color: black;
