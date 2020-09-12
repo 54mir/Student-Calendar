@@ -21,7 +21,14 @@
     color: #272932;
 }
 
+.btn-outline-light{
+    color: #E7ECEF;
+    border-color: #E7ECEF;
+}
 
+.v-center{
+    margin-top: 35vh;
+}
 
 .carousel-caption{
   color: black;
