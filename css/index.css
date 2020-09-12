@@ -21,9 +21,23 @@
     color: #272932;
 }
 
+.nav-bg{
+    background-color:  #E7ECEF;
+}
 .btn-outline-light{
     color: #E7ECEF;
     border-color: #E7ECEF;
+}
+
+.btn-outline-teal{
+    color: #1AC4C7;
+    border-color: #1AC4C7;
+}
+
+.btn-outline-teal:hover {
+  color: #E7ECEF;
+  background-color: #1AC4C7;
+  border-color: #1AC4C7;
 }
 
 .v-center{
