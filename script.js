@@ -1,4 +1,5 @@
-let calendarFileName = "basic.ics";
+let calFileName = "basic.ics";
+let calFileURL = "https://cors-anywhere.herokuapp.com/https://calendar.google.com/calendar/ical/supervirtualteacher%40gmail.com/public/basic.ics"
 
 function loadFile(filePath) {
 	var result = null;
@@ -10,7 +11,7 @@ function loadFile(filePath) {
 	}
 	return result;
 }
-let calendarFile = loadFile(calendarFileName);
+let calendarFile = loadFile(calFileURL);
 
 let calendarArr = calendarFile.split("\n");
 
