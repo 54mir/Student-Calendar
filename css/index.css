@@ -19,12 +19,15 @@
 .carousel-caption{
   color: black;
   right: 0;
-  bottom: .5rem;
   left: 0;
+  top: 50px;
   justify-content: center;
   padding-left: 0;
   margin-right: 15%;
   margin-left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
 }
 .w-100{
     width: 100%;
