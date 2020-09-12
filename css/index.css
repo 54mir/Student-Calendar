@@ -125,3 +125,17 @@ carousel-inner{
 .gs-font{
     font-family: 'Grandstander', cursive;
 }
+
+.slideshow{
+    height: 50vh;
+    width: 100%;
+    background-color: 	hsl(42, 100%, 65%);
+}
+.slide-header{
+    height: 15%;
+    background-color: 	hsl(42, 100%, 75%);
+}
+.slide-time{
+    height: 10%;
+    background-color:   hsl(42, 100%, 70%);
+}
