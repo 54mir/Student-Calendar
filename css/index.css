@@ -50,7 +50,7 @@
 }
 
 .v-center{
-    margin-top: 35vh;
+    margin-top: 30vh;
 }
 
 .carousel-caption {
@@ -129,7 +129,7 @@ carousel-inner{
     height: 100%;
 } */
 
-body{
+.index-bg{
     background-color: #ddd;
     background-image: url("../images/mathBoard2.jpg");
     background-size: cover;
@@ -146,7 +146,7 @@ body{
 
 .slideshow{
     background-color: 	hsl(186, 40%, 65%);
-    height: 50vh;
+    height: 500px;
     width: 100%
 }
 
@@ -157,6 +157,7 @@ body{
         margin-left: 0px;
         margin-right: 0px;
     }
+    
 }
 
 .status{
