@@ -27,6 +27,12 @@
 .nav-bg{
     background-color:  #E7ECEF;
 }
+
+.btn-teal{
+    background-color: #1AC4C7;
+    border-color: #1AC4C7; 
+    color:#E7ECEF; 
+}
 .btn-outline-light{
     color: #E7ECEF;
     border-color: #E7ECEF;
@@ -158,6 +164,12 @@ body{
     background-color: hsl(57, 97%, 61%);
     text-align: right;
     padding-right: 1%;
+}
+
+.status-current{
+    text-align: left;
+    width: 100%;
+    background-color: greenyellow;
 }
 .slide-header{
     height: 15%;
