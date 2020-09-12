@@ -110,3 +110,7 @@ a:hover {
       margin-top: 
     }
 }
+
+.bg-img-math{
+    background-image: url("images/mathBoard3.jpg")
+}
