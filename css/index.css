@@ -89,8 +89,8 @@ a:hover {
 
 
 .caption-description {
-    margin-bottom: 5%;
-    margin-top: 15%;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 
 @media (max-width: 600px) {
@@ -98,14 +98,15 @@ a:hover {
       padding:0;
       margin:0;
     }
+}
 
-    body {
-      padding:0;
-    }
+.carousel-position{
+    margin-top: 8vh
+}
 
-    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom:0;
+@media (max-width: 600px){
+    .carousel-position {
+      height: 75vh;
+      margin-top: 
     }
 }
