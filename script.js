@@ -21,55 +21,70 @@ function loadFile(filePath) {
 }
 
 function parseEvents(calendar) {
-	let calendarArr = calendar.split("\n");
-
-	for (let i = 0; i < calendar.length; i++) {
-		if (calendar[i] = "BEGIN:VEVENT") {
+	var events = new Array;
+	var calendarArr = calendar.split(/\r?\n/);
+	// console.log(calendarArr);
+	for (let i = 0; i < calendarArr.length; i++) {
+		if (calendarArr[i].includes("BEGIN:VEVENT")) {
 			event = new Event;
-			while (calendar[i] != "END:VEVENT") {
-				if (calendar[i].search("DTSTART" == 0)) event.startDateTime = splitTime(calendar[i]);
-				if (calendar[i].search("DTEND" == 0)) event.endDateTime = splitTime(calendar[i]);
-				if (calendar[i].search("DESCRIPTION" == 0)) event.description = splitStandard(calendar[i]);
-				if (calendar[i].search("SUMMARY" == 0)) event.title = splitStandard(calendar[i]);
+			while (!calendarArr[i].startsWith("END:VEVENT")) {
+				if (calendarArr[i].startsWith("DTSTART")) event.startDateTime = splitTime(calendarArr[i]);
+				else if (calendarArr[i].startsWith("DTEND")) event.endDateTime = splitTime(calendarArr[i]);
+				else if (calendarArr[i].startsWith("SUMMARY")) event.title = splitSummary(calendarArr[i]);
+				else if (calendarArr[i].startsWith("DESCRIPTION")) {
+					var joined = "";
+					while (!calendarArr[i].startsWith("LAST-MODIFIED:")) { joined += calendarArr[i++]; }
+					event.description = splitDescription(joined);
+				}
 				i++;
 			}
+			events.push(event);
 		}
 	}
-	return calendarArr;
+	return events;
 }
 
 function splitTime(time) {
-	console.log(time);
 	var rawTime = time.split(":");
 	var dt = rawTime[1].split("T");
-	var date = dt[0];
+	// var date = dt[0];
+	var date = new Date();
 	var time = dt[1];
+	date.setHours(time.slice(0, 2));
+	date.setMinutes(time.slice(2, 4));
+	return date;
+	// return new Date(date.slice(0, 4), date.slice(4, 6), date.slice(6), time.slice(0, 2), time.slice(2, 4));
+	// return new Date(date.getFullYear.toString, date.getMonth.toString, date.getDay.toString, time.slice(0, 2), time.slice(2, 4));
+}
 
-	let d = new Date(date.slice(0, 4), date.slice(4, 6), date.slice(6), time(0, 2), time(2, 4));
-	console.log(d);
-	return d;
+function splitDescription(entry) {
+	return entry.slice(12);
+}
+
+function splitSummary(entry) {
+	return entry.split(":", 2)[1];
 }
 
 
 
+function getEvents() {
+	currentTime = new Date();
+	events = parseEvents(calendarFile);
+	events.sort(function (a, b) { return a.startDateTime > b.startDateTime });
 
 
-// BEGIN: VEVENT
-// DTSTART; TZID = America / Chicago: 20200912T150000
-// DTEND; TZID = America / Chicago: 20200912T163000
-// RRULE: FREQ = WEEKLY; WKST = SU; BYDAY = MO, SA, TH, TU, WE
-// DTSTAMP: 20200912T035058Z
-// UID: 1fs62vn9gf2shp6ifrr0eq9bgm@google.com
-// CREATED: 20200912T033135Z
-// DESCRIPTION: Spend this time however you choose! Playing\, spending time wit
-// h family\, going outside\, catching up on your shows\, exercising\, helping
-// out around the house\, napping\, etc!
-// LAST - MODIFIED: 20200912T033526Z
-// LOCATION:
-// SEQUENCE: 1
-// STATUS: CONFIRMED
-// SUMMARY: Choice Time
-// TRANSP: OPAQUE
-// END: VEVENT
+	for (let i = 0; i < events.length; i++) {
+		if (events[i].endDateTime < currentTime) continue;
+		else {
+			return events.slice(i);
+		}
 
-console.log(parseEvents(calendarFile));
+	}
+
+
+
+
+
+
+}
+console.log(getEvents());
