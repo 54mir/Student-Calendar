@@ -146,15 +146,15 @@ body{
 .slideshow{
     height: 50vh;
     width: 100%;
-    background-color: 	hsl(42, 100%, 65%);
+    background-color: 	hsl(186, 40%, 65%);
 }
 .slide-header{
     height: 15%;
-    background-color: 	hsl(42, 100%, 75%);
+    background-color: 	hsl(186, 40%, 80%);
 }
 .slide-time{
     height: 10%;
-    background-color:   hsl(42, 100%, 70%);
+    background-color:   hsl(186, 40%, 75%);
 }
 
 .title{
