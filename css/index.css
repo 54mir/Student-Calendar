@@ -125,7 +125,7 @@ carousel-inner{
 
 body{
     background-color: #ddd;
-    background-image: url("images/mathBoard3.jpg") !important;
+    background-image: url("../images/mathBoard3.jpg") !important;
 }
 
 .carousel{
