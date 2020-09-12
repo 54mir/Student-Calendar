@@ -1,3 +1,22 @@
-let response = fetch('https://calendar.google.com/calendar/ical/k2vlnk7a74qg6seee68huqampk%40group.calendar.google.com/public/basic.ics');
+let calendarFileName = "basic.ics";
 
-console.log(response);
+function loadFile(filePath) {
+	var result = null;
+	var xhttp = new XMLHttpRequest();
+	xhttp.open("GET", filePath, false);
+	xhttp.send();
+	if (xhttp.status == 200) {
+		result = xhttp.responseText;
+	}
+	return result;
+}
+let calendarFile = loadFile(calendarFileName);
+
+let calendarArr = calendarFile.split("\n");
+
+console.log(calendarArr);
+
+function parseEvents(calendarFile) {
+
+
+}
