@@ -1,0 +1,15 @@
+* {
+    color: #252422;
+}
+
+.btn-red {
+  background-color: #E5625E;
+}
+
+.jumbotron {
+    margin-top: 1vh
+}
+.card{
+    margin-top:1vh;
+    margin-bottom: 1vh;
+}
