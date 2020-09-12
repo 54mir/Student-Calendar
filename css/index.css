@@ -132,13 +132,6 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* .bg-math{
-    background-color: #1AC4C7;
-    /* background-image: url("images/mathBoard3.jpg"); 
-    background-size: cover;
-    
-} */
-
 .gs-font{
     font-family: 'Grandstander', cursive;
 }
@@ -148,6 +141,11 @@ body{
     width: 100%;
     background-color: 	hsl(186, 40%, 65%);
 }
+.status{
+    height: 8%;
+    background-color: hsl(57, 97%, 61%);
+    text-align: right;
+}
 .slide-header{
     height: 15%;
     background-color: 	hsl(186, 40%, 80%);
@@ -155,6 +153,9 @@ body{
 .slide-time{
     height: 10%;
     background-color:   hsl(186, 40%, 75%);
+}
+.slide-description{
+    height: 65%;
 }
 
 .title{
@@ -165,5 +166,6 @@ body{
 
 .description{
     font-family: 'Roboto', sans-serif;
+    padding-top: 2%
 }
 
