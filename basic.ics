@@ -1,0 +1,361 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:supervirtualteacher@gmail.com
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T120000
+DTEND;TZID=America/Chicago:20200911T133000
+RRULE:FREQ=DAILY
+DTSTAMP:20200912T035058Z
+UID:54ebahi3qfbb992tp96hdfqrc2@google.com
+CREATED:20200912T031946Z
+DESCRIPTION:It's time for lunch\, lunch\, it's time for lunch\, lunch! Take
+  this hour to make sure you eat well and also have some time to relax befor
+ e you come back for instruction in the afternoon!
+LAST-MODIFIED:20200912T033656Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:LUNCH!
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T173000
+DTEND;TZID=America/Chicago:20200911T220000
+RRULE:FREQ=DAILY
+DTSTAMP:20200912T035058Z
+UID:40e7vvjnlq23mnv37ru7ool3s9@google.com
+CREATED:20200912T033613Z
+DESCRIPTION:
+LAST-MODIFIED:20200912T033647Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T060000
+DTEND;TZID=America/Chicago:20200911T080000
+RRULE:FREQ=DAILY
+DTSTAMP:20200912T035058Z
+UID:10mhqnj7foufridhhrcbnohmpe@google.com
+CREATED:20200912T033623Z
+DESCRIPTION:
+LAST-MODIFIED:20200912T033639Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200912T150000
+DTEND;TZID=America/Chicago:20200912T163000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=MO,SA,TH,TU,WE
+DTSTAMP:20200912T035058Z
+UID:1fs62vn9gf2shp6ifrr0eq9bgm@google.com
+CREATED:20200912T033135Z
+DESCRIPTION:Spend this time however you choose! Playing\, spending time wit
+ h family\, going outside\, catching up on your shows\, exercising\, helping
+  out around the house\, napping\, etc!
+LAST-MODIFIED:20200912T033526Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Choice Time
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200912T143000
+DTEND;TZID=America/Chicago:20200912T150000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=MO,SA,TH,TU,WE
+DTSTAMP:20200912T035058Z
+UID:7m9an8anae3cmaomhs5osm0p07@google.com
+CREATED:20200912T033433Z
+DESCRIPTION:Log into Google Classroom and watch your Social Studies Video L
+ esson\, then complete the activity!<br><br><a href="http://classroom.google
+ .com" id="ow9350" __is_owner="true">Google Classroom</a>
+LAST-MODIFIED:20200912T033433Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Asynch Social Studies
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T163000
+DTEND;TZID=America/Chicago:20200911T173000
+RRULE:FREQ=DAILY
+DTSTAMP:20200912T035058Z
+UID:637r9fk8rols0l604oqqu83ld5@google.com
+CREATED:20200912T033307Z
+DESCRIPTION:Log onto Google Classroom and complete your homework\, activiti
+ es\, or assignments for the day!<br><br><a href="http://classroom.google.co
+ m" id="ow8521" __is_owner="true">Google Classroom</a>
+LAST-MODIFIED:20200912T033307Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Assignment Completion
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T140000
+DTEND;TZID=America/Chicago:20200911T163000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=FR,SU
+DTSTAMP:20200912T035058Z
+UID:38389n9e86ouh1471qdc10nkav@google.com
+CREATED:20200912T033040Z
+DESCRIPTION:This time is YOURS! Spend it however you would like. With famil
+ y\, playing\, catching up on your shows\, taking a nap\, playing outside\, 
+ helping out around the house\, etc!
+LAST-MODIFIED:20200912T033158Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Choice Time
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T080000
+DTEND;TZID=America/Chicago:20200911T090000
+RRULE:FREQ=DAILY
+DTSTAMP:20200912T035058Z
+UID:0s1pgutrv5pl780q5949squ4eo@google.com
+CREATED:20200912T032921Z
+DESCRIPTION:Spend an hour doing your blended learning independently before 
+ you begin live instruction. Spend 20 minutes on Lexia\, 20 minutes on IXL\,
+  and 20 minutes on EPIC.<br><br><a href="http://lexiacore5.com" id="ow7325"
+  __is_owner="true">Lexia</a><br><a href="http://ixl.com" id="ow7337" __is_o
+ wner="true">IXL</a><br><a href="http://getepic.com" id="ow7349" __is_owner=
+ "true">EPIC</a>
+LAST-MODIFIED:20200912T032921Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Blended Learning
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T090000
+DTEND;TZID=America/Chicago:20200911T093000
+RRULE:FREQ=DAILY
+DTSTAMP:20200912T035058Z
+UID:7ao7pmhjmnfruinmouomtefrr7@google.com
+CREATED:20200912T032802Z
+DESCRIPTION:Come join us live for morning meeting. We'll do a fun activity 
+ each day to get our day started!<br><br><a href="https://meet.google.com/ti
+ y-tkqc-rrs" id="ow7033" __is_owner="true">https://meet.google.com/tiy-tkqc-
+ rrs</a>
+LAST-MODIFIED:20200912T032802Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Live Morning Meeting
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200912T133000
+DTEND;TZID=America/Chicago:20200912T143000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=MO,SA,TH,TU,WE
+DTSTAMP:20200912T035058Z
+UID:7gf5cc1sad7dn6d3jgdlkijjo7@google.com
+CREATED:20200912T032718Z
+DESCRIPTION:Come join us for live math instruction! Make sure you have your
+  notebook\, pencil\, and a colored writing implement of choice (marker\, cr
+ ayon\, colored pencil\, highlighter etc).<br><br><a href="https://meet.goog
+ le.com/tiy-tkqc-rrs" id="ow6766" __is_owner="true">https://meet.google.com/
+ tiy-tkqc-rrs</a>
+LAST-MODIFIED:20200912T032718Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Live Math Lesson
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T133000
+DTEND;TZID=America/Chicago:20200911T140000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=FR,SU
+DTSTAMP:20200912T035058Z
+UID:06gcullk8rvk2nr4jgboivj3ne@google.com
+CREATED:20200912T032610Z
+DESCRIPTION:Come celebrate your accomplishments for the week live with the 
+ whole 2nd grade!<br><br><a href="https://meet.google.com/tiy-tkqc-rrs" id="
+ ow6412" __is_owner="true">https://meet.google.com/tiy-tkqc-rrs</a>
+LAST-MODIFIED:20200912T032610Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:IMPACT CELEBRATION!
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200912T113000
+DTEND;TZID=America/Chicago:20200912T120000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=MO,SA,TH,TU,WE
+DTSTAMP:20200912T035058Z
+UID:6u3da2p3e3nikibc4bp6litt43@google.com
+CREATED:20200912T032449Z
+DESCRIPTION:Log on live for Beyond Z!<br>Monday - Art<br>Tuesday - P.E.<br>
+ Wednesday - STEM<br>Thursday - Music<br><br><a href="https://meet.google.co
+ m/tiy-tkqc-rrs" id="ow6028" __is_owner="true">https://meet.google.com/tiy-t
+ kqc-rrs</a>
+LAST-MODIFIED:20200912T032449Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Live Beyond Z!
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200913T130000
+DTEND;TZID=America/Chicago:20200913T133000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=SU,TH,TU
+DTSTAMP:20200912T035058Z
+UID:1krpoa667hot5hcl06ekfc3tus@google.com
+CREATED:20200912T032312Z
+DESCRIPTION:Log onto Google Classroom and watch Ms. Newman's SEL video and 
+ complete your reflection!<br><br><a href="http://classroom.google.com" id="
+ ow5726" __is_owner="true">Google Classroom</a>
+LAST-MODIFIED:20200912T032312Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Asynch SEL Lesson
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200912T130000
+DTEND;TZID=America/Chicago:20200912T133000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=MO,SA,WE
+DTSTAMP:20200912T035058Z
+UID:0vbk8gm1un34vp878hoclc4fl9@google.com
+CREATED:20200912T032124Z
+DESCRIPTION:Join Ms. Newman for live SEL! Make sure to bring your problem-s
+ olving strategies\, and be ready to show all the ways you can be kind to ot
+ hers and yourself!<br><br><a href="https://meet.google.com/tiy-tkqc-rrs" id
+ ="ow4498" __is_owner="true">https://meet.google.com/tiy-tkqc-rrs</a>
+LAST-MODIFIED:20200912T032124Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Live SEL Lesson
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T110000
+DTEND;TZID=America/Chicago:20200911T120000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=FR,SU
+DTSTAMP:20200912T035058Z
+UID:78nv2h9mvuvk0gv18v5uqefidp@google.com
+CREATED:20200912T031842Z
+DESCRIPTION:Join us for live math instruction!<br><br><a href="https://meet
+ .google.com/tiy-tkqc-rrs" id="ow3931" __is_owner="true">https://meet.google
+ .com/tiy-tkqc-rrs</a>
+LAST-MODIFIED:20200912T031842Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Live Math Lesson
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T104500
+DTEND;TZID=America/Chicago:20200911T110000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=FR,SU
+DTSTAMP:20200912T035058Z
+UID:6882k6hf238h56vn7uihl3qu5e@google.com
+CREATED:20200912T031753Z
+DESCRIPTION:Take a quick break between reading and math! Get your wiggles o
+ ut\, grab a snack or drink\, go to the bathroom\, and/or hug someone you lo
+ ve!
+LAST-MODIFIED:20200912T031754Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Brain Break!
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200901T104500
+DTEND;TZID=America/Chicago:20200901T113000
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=MO,SA,TH,TU,WE
+EXDATE;TZID=America/Chicago:20200901T104500
+EXDATE;TZID=America/Chicago:20200910T104500
+EXDATE;TZID=America/Chicago:20200909T104500
+EXDATE;TZID=America/Chicago:20200908T104500
+EXDATE;TZID=America/Chicago:20200907T104500
+EXDATE;TZID=America/Chicago:20200905T104500
+EXDATE;TZID=America/Chicago:20200903T104500
+EXDATE;TZID=America/Chicago:20200902T104500
+DTSTAMP:20200912T035058Z
+UID:2olf78tq9mctb6g21ds7b3kmgl@google.com
+CREATED:20200912T031531Z
+DESCRIPTION:This is your time to relax! Spend time with family\, have an ea
+ rly lunch\, play a game... whatever you'd like!
+LAST-MODIFIED:20200912T031532Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Break Time!
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T100000
+DTEND;TZID=America/Chicago:20200911T104500
+RRULE:FREQ=DAILY
+DTSTAMP:20200912T035058Z
+UID:7aga4t7oi3d95c17q8u1b23a6u@google.com
+CREATED:20200912T031349Z
+DESCRIPTION:Come join us live for Reading instruction!<br><br><a href="http
+ s://meet.google.com/tiy-tkqc-rrs" id="ow2091" __is_owner="true">https://mee
+ t.google.com/tiy-tkqc-rrs</a>
+LAST-MODIFIED:20200912T031349Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Live Reading Lesson
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T093000
+DTEND;TZID=America/Chicago:20200911T100000
+RRULE:FREQ=DAILY
+DTSTAMP:20200912T035058Z
+UID:5njbulek492m310aq9knpofcqk@google.com
+CREATED:20200912T031132Z
+DESCRIPTION:Come join us live for Phonics Instruction on Google Meets!<br><
+ br><a href="https://meet.google.com/tiy-tkqc-rrs" id="ow653" __is_owner="tr
+ ue">https://meet.google.com/tiy-tkqc-rrs</a>\n\nThis event has a video call
+ .\nJoin: https://meet.google.com/tiy-tkqc-rrs
+LAST-MODIFIED:20200912T031234Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Live Phonics Lesson
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
