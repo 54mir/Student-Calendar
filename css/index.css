@@ -1,3 +1,4 @@
+/*
 * {
     color: #252422;
 }
@@ -12,4 +13,16 @@
 .card{
     margin-top:1vh;
     margin-bottom: 1vh;
+}
+*/
+
+.carousel-caption{
+    color: black;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
 }
