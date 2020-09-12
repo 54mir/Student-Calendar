@@ -81,10 +81,5 @@ function getEvents() {
 
 	}
 
-
-
-
-
-
 }
-console.log(getEvents());
+
