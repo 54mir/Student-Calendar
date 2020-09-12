@@ -134,19 +134,30 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.gs-font{
-    font-family: 'Grandstander', cursive;
+.berrio-font{
+    font-family: 'Barrio', cursive;
 }
 
 .slideshow{
-    height: 50vh;
-    width: 100%;
     background-color: 	hsl(186, 40%, 65%);
+    height: 50vh;
+    width: 100%
 }
+
+@media (max-width: 600px){
+    .slideshow{
+        height: 50vh;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
 .status{
     height: 8%;
     background-color: hsl(57, 97%, 61%);
     text-align: right;
+    padding-right: 1%;
 }
 .slide-header{
     height: 15%;
