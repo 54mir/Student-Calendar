@@ -50,16 +50,20 @@
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 40%;
+/*  bottom: 40%;*/
   left: 15%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  height: 90%
 }
 
 div.carousel-caption * {
     color: #E7ECEF;
+}
+div.carousel-caption caption-header{
+    top: 10%;
 }
 .w-100{
     width: 100%;
@@ -81,4 +85,9 @@ a {
 a:hover {
   color: #D8A47F;
   text-decoration: underline;
+}
+
+
+.caption-description {
+    margin-bottom: 5%
 }
