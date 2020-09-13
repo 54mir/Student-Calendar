@@ -28,7 +28,9 @@ class Teacher extends React.Component {
 						<input type="email" className="form-control" id="publicCalendar" aria-describedby="emailHelp" placeholder="Enter email" />
 					</div>
 					<h5 className="text-center">- or -</h5>
-					<img src="./google_calendar.png" className="google-calendar d-block mx-auto" />
+					<a href="/">
+						<img src="./google_calendar.png" className="google-calendar d-block mx-auto" />
+					</a>
 					<div className="form-group">
 						<label htmlFor="studentEmails">Student Email Addresses</label>
 						<CreatableSelect
