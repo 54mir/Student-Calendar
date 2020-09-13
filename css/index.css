@@ -31,7 +31,7 @@
     background-color:  #E7ECEF;
 }
 
-
+/*Buttons using above color scheme colors*/
 .btn-teal{
     background-color: #1AC4C7;
     border-color: #1AC4C7; 
@@ -53,20 +53,18 @@
   border-color: #1AC4C7;
 }
 
+/*Centers content vertically on certain pages*/
 .v-center{
     margin-top: 30vh;
 }
 
-.w-100{
-    width: 100%;
-    height: 75vh;
-}
-
+/*sets font for sign-in intro page*/
 .intro-font{
     font-family: 'Londrina Outline', cursive;
     font-size: 10vw
 }
 
+/*Changes color of links to match color scheme*/
 a {
   color: #1AC4C7;
   text-decoration: none;
@@ -78,12 +76,14 @@ a:hover {
   text-decoration: underline;
 }
 
+/*sets margins for small screens with container*/
 @media screen and (max-width: 800px) {
     .container {
       margin:0;
     }
 }
 
+/*Changes the position of the carousel*/
 .carousel-position{
     height: 100%;
     padding-top: 12vh;
@@ -92,15 +92,7 @@ carousel-inner{
     height: 800px;
 }
 
-/*
-@media (max-width: 600px){
-    .carousel-position {
-      height: 75vh;
-      margin-top: 
-    }
-}
-*/
-
+/*Sets the background of the index page*/
 .index-bg{
     background-color: #ddd;
     background-image: url("../images/mathBoard2.jpg");
@@ -108,22 +100,26 @@ carousel-inner{
     
 }
 
+/*Adds a shadow and max-width to the carousel*/
 .carousel{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     max-width: 800px;
     margin: auto
 }
 
+/*Changes font to Berrio*/
 .berrio-font{
     font-family: 'Barrio', cursive;
 }
 
+/*Sets background for carousel slide*/
 .slideshow{
     background-color: 	hsl(186, 40%, 65%);
     height: 500px;
     width: 100%
 }
 
+/*Sets aspects of carousel slide when screen is a certain size*/
 @media only screen and (max-width: 800px){
     .slideshow{
         height: 50vh;
@@ -131,9 +127,9 @@ carousel-inner{
         margin-left: 0px;
         margin-right: 0px;
     }
-    
 }
 
+/*Sets characteristics of sections of carousel slide*/
 .status{
     height: 8%;
     background-color: hsl(57, 97%, 61%);
@@ -146,6 +142,7 @@ carousel-inner{
     width: 100%;
     background-color: greenyellow;
 }
+
 .slide-header{
     height: 15%;
     background-color: 	hsl(186, 40%, 80%);
@@ -162,8 +159,6 @@ carousel-inner{
     float: left;
     display: inline;
     width: 45%;
-    /* position: relative; */
-    
 }
 .time-right{
     float: right;
@@ -175,13 +170,11 @@ carousel-inner{
     font-family: 'Roboto', sans-serif;    
     margin: 5px;
     padding: 10px;    
-
 }
 
 #time-right-text{
     text-align: right;    
     margin-right: 5px;
-    
 }
 
 #time-left-text{
@@ -196,7 +189,6 @@ carousel-inner{
     text-align: center;
     padding: 10px;
     /* top: 50%; */
-
     font-size: 3.5rem;
 }
 
