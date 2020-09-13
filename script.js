@@ -7,6 +7,11 @@ function Event(title, description, startTime, endTime) {
 	this.description = description;
 	this.startDateTime = startTime;
 	this.endDateTime = endTime;
+	// this.checkDate = function () {
+	// 	if (this.startDateTime > this.endDateTime) {
+	// 		this.startDateTime.setDate(this.startDateTime.getDate() - 1);
+	// 	}
+	// }
 }
 
 function loadFile(filePath) {
@@ -52,6 +57,7 @@ function splitTime(time) {
 	var time = dt[1];
 	date.setHours(time.slice(0, 2));
 	date.setMinutes(time.slice(2, 4));
+
 	return date;
 	// return new Date(date.slice(0, 4), date.slice(4, 6), date.slice(6), time.slice(0, 2), time.slice(2, 4));
 	// return new Date(date.getFullYear.toString, date.getMonth.toString, date.getDay.toString, time.slice(0, 2), time.slice(2, 4));
