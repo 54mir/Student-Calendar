@@ -30,9 +30,7 @@ RRULE:FREQ=DAILY
 DTSTAMP:20200912T035058Z
 UID:54ebahi3qfbb992tp96hdfqrc2@google.com
 CREATED:20200912T031946Z
-DESCRIPTION:It's time for lunch\, lunch\, it's time for lunch\, lunch! Take
-  this hour to make sure you eat well and also have some time to relax befor
- e you come back for instruction in the afternoon!
+DESCRIPTION:It's time for lunch, lunch, it's time for lunch, lunch! Take this hour to make sure you eat well and also have some time to relax before you come back for instruction in the afternoon!
 LAST-MODIFIED:20200912T033656Z
 LOCATION:
 SEQUENCE:0
@@ -77,9 +75,7 @@ RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=MO,SA,TH,TU,WE
 DTSTAMP:20200912T035058Z
 UID:1fs62vn9gf2shp6ifrr0eq9bgm@google.com
 CREATED:20200912T033135Z
-DESCRIPTION:Spend this time however you choose! Playing\, spending time wit
- h family\, going outside\, catching up on your shows\, exercising\, helping
-  out around the house\, napping\, etc!
+DESCRIPTION:Spend this time however you choose! Playing, spending time with family, going outside, catching up on your shows, exercising, helping out around the house, napping, etc!
 LAST-MODIFIED:20200912T033526Z
 LOCATION:
 SEQUENCE:1
@@ -94,9 +90,7 @@ RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=MO,SA,TH,TU,WE
 DTSTAMP:20200912T035058Z
 UID:7m9an8anae3cmaomhs5osm0p07@google.com
 CREATED:20200912T033433Z
-DESCRIPTION:Log into Google Classroom and watch your Social Studies Video L
- esson\, then complete the activity!<br><br><a href="http://classroom.google
- .com" id="ow9350" __is_owner="true">Google Classroom</a>
+DESCRIPTION:Log into Google Classroom and watch your Social Studies Video Lesson, then complete the activity!<br><br><a href="http://classroom.google.com" id="ow9350" __is_owner="true">Google Classroom</a>
 LAST-MODIFIED:20200912T033433Z
 LOCATION:
 SEQUENCE:0
@@ -111,9 +105,7 @@ RRULE:FREQ=DAILY
 DTSTAMP:20200912T035058Z
 UID:637r9fk8rols0l604oqqu83ld5@google.com
 CREATED:20200912T033307Z
-DESCRIPTION:Log onto Google Classroom and complete your homework\, activiti
- es\, or assignments for the day!<br><br><a href="http://classroom.google.co
- m" id="ow8521" __is_owner="true">Google Classroom</a>
+DESCRIPTION:Log onto Google Classroom and complete your homework, activities, or assignments for the day!<br><br><a href="http://classroom.google.com" id="ow8521" __is_owner="true">Google Classroom</a>
 LAST-MODIFIED:20200912T033307Z
 LOCATION:
 SEQUENCE:0
@@ -128,9 +120,7 @@ RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=FR,SU
 DTSTAMP:20200912T035058Z
 UID:38389n9e86ouh1471qdc10nkav@google.com
 CREATED:20200912T033040Z
-DESCRIPTION:This time is YOURS! Spend it however you would like. With famil
- y\, playing\, catching up on your shows\, taking a nap\, playing outside\, 
- helping out around the house\, etc!
+DESCRIPTION:This time is YOURS! Spend it however you would like. With family, playing, catching up on your shows, taking a nap, playing outside, helping out around the house, etc!
 LAST-MODIFIED:20200912T033158Z
 LOCATION:
 SEQUENCE:0
@@ -146,7 +136,7 @@ DTSTAMP:20200912T035058Z
 UID:0s1pgutrv5pl780q5949squ4eo@google.com
 CREATED:20200912T032921Z
 DESCRIPTION:Spend an hour doing your blended learning independently before 
- you begin live instruction. Spend 20 minutes on Lexia\, 20 minutes on IXL\,
+ you begin live instruction. Spend 20 minutes on Lexia, 20 minutes on IXL,
   and 20 minutes on EPIC.<br><br><a href="http://lexiacore5.com" id="ow7325"
   __is_owner="true">Lexia</a><br><a href="http://ixl.com" id="ow7337" __is_o
  wner="true">IXL</a><br><a href="http://getepic.com" id="ow7349" __is_owner=
@@ -184,8 +174,8 @@ DTSTAMP:20200912T035058Z
 UID:7gf5cc1sad7dn6d3jgdlkijjo7@google.com
 CREATED:20200912T032718Z
 DESCRIPTION:Come join us for live math instruction! Make sure you have your
-  notebook\, pencil\, and a colored writing implement of choice (marker\, cr
- ayon\, colored pencil\, highlighter etc).<br><br><a href="https://meet.goog
+  notebook, pencil, and a colored writing implement of choice (marker, cr
+ ayon, colored pencil, highlighter etc).<br><br><a href="https://meet.goog
  le.com/tiy-tkqc-rrs" id="ow6766" __is_owner="true">https://meet.google.com/
  tiy-tkqc-rrs</a>
 LAST-MODIFIED:20200912T032718Z
@@ -255,7 +245,7 @@ DTSTAMP:20200912T035058Z
 UID:0vbk8gm1un34vp878hoclc4fl9@google.com
 CREATED:20200912T032124Z
 DESCRIPTION:Join Ms. Newman for live SEL! Make sure to bring your problem-s
- olving strategies\, and be ready to show all the ways you can be kind to ot
+ olving strategies, and be ready to show all the ways you can be kind to ot
  hers and yourself!<br><br><a href="https://meet.google.com/tiy-tkqc-rrs" id
  ="ow4498" __is_owner="true">https://meet.google.com/tiy-tkqc-rrs</a>
 LAST-MODIFIED:20200912T032124Z
@@ -290,7 +280,7 @@ DTSTAMP:20200912T035058Z
 UID:6882k6hf238h56vn7uihl3qu5e@google.com
 CREATED:20200912T031753Z
 DESCRIPTION:Take a quick break between reading and math! Get your wiggles o
- ut\, grab a snack or drink\, go to the bathroom\, and/or hug someone you lo
+ ut, grab a snack or drink, go to the bathroom, and/or hug someone you lo
  ve!
 LAST-MODIFIED:20200912T031754Z
 LOCATION:
@@ -314,8 +304,8 @@ EXDATE;TZID=America/Chicago:20200902T104500
 DTSTAMP:20200912T035058Z
 UID:2olf78tq9mctb6g21ds7b3kmgl@google.com
 CREATED:20200912T031531Z
-DESCRIPTION:This is your time to relax! Spend time with family\, have an ea
- rly lunch\, play a game... whatever you'd like!
+DESCRIPTION:This is your time to relax! Spend time with family, have an ea
+ rly lunch, play a game... whatever you'd like!
 LAST-MODIFIED:20200912T031532Z
 LOCATION:
 SEQUENCE:0
@@ -349,8 +339,8 @@ UID:5njbulek492m310aq9knpofcqk@google.com
 CREATED:20200912T031132Z
 DESCRIPTION:Come join us live for Phonics Instruction on Google Meets!<br><
  br><a href="https://meet.google.com/tiy-tkqc-rrs" id="ow653" __is_owner="tr
- ue">https://meet.google.com/tiy-tkqc-rrs</a>\n\nThis event has a video call
- .\nJoin: https://meet.google.com/tiy-tkqc-rrs
+ ue">https://meet.google.com/tiy-tkqc-rrs</a>This event has a video call
+ .Join: https://meet.google.com/tiy-tkqc-rrs
 LAST-MODIFIED:20200912T031234Z
 LOCATION:
 SEQUENCE:2
