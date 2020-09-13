@@ -32,8 +32,8 @@ function parseEvents(calendar) {
 				else if (calendarArr[i].startsWith("DTEND")) event.endDateTime = splitTime(calendarArr[i]);
 				else if (calendarArr[i].startsWith("SUMMARY")) event.title = splitSummary(calendarArr[i]);
 				else if (calendarArr[i].startsWith("DESCRIPTION")) {
-					var joined = "";
-					while (!calendarArr[i].startsWith("LAST-MODIFIED:")) { joined += calendarArr[i++]; }
+					var joined = calendarArr[i++];
+					while (!calendarArr[i].startsWith("LAST-MODIFIED:")) { joined += calendarArr[i++].slice(1); }
 					event.description = splitDescription(joined);
 				}
 				i++;
@@ -58,8 +58,12 @@ function splitTime(time) {
 }
 
 function splitDescription(entry) {
-	return entry.slice(12);
+	text = entry.slice(12);
+	// text = text.replace("\\,", ",");
+	return text;
 }
+
+
 
 function splitSummary(entry) {
 	return entry.split(":", 2)[1];
@@ -73,13 +77,15 @@ function getEvents() {
 	events.sort(function (a, b) { return a.startDateTime > b.startDateTime });
 
 
-	for (let i = 0; i < events.length; i++) {
-		if (events[i].endDateTime < currentTime) continue;
-		else {
-			return events.slice(i);
-		}
+	// for (let i = 0; i < events.length; i++) {
+	// 	if (events[i].endDateTime < currentTime) continue;
+	// 	else {
+	// 		return events.slice(i);
+	// 	}
 
-	}
+	// }
+
+	return events;
 
 }
 
