@@ -52,6 +52,7 @@
 .v-center{
     margin-top: 30vh;
 }
+<<<<<<< Updated upstream
 
 div.carousel-caption * {
     color: #E7ECEF;
@@ -59,14 +60,16 @@ div.carousel-caption * {
 div.carousel-caption caption-header{
     top: 10%;
 }
+=======
+    
+>>>>>>> Stashed changes
 .w-100{
     width: 100%;
     height: 75vh;
 }
 
-.grandstand-font{
-/*    font-family: 'Grandstander', cursive;*/
-font-family: 'Londrina Outline', cursive;
+.intro-font{
+    font-family: 'Londrina Outline', cursive;
     font-size: 10vw
 }
 
@@ -89,20 +92,21 @@ a:hover {
 }
 
 .carousel-position{
-/*    margin-top: 8vh*/
-    height: 100%;
-    padding-top: 8vh
+/*    height: 100%;*/
+    padding-top: 8vh;
 }
 carousel-inner{
     height: 100%;
 }
 
+/*
 @media (max-width: 600px){
     .carousel-position {
       height: 75vh;
       margin-top: 
     }
 }
+*/
 
 .index-bg{
     background-color: #ddd;
@@ -113,27 +117,32 @@ carousel-inner{
 
 .carousel{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%
 }
 
 .berrio-font{
     font-family: 'Barrio', cursive;
 }
 
+/*
 .slideshow{
-    background-color: 	hsl(186, 40%, 65%);
     height: 500px;
     width: 100%
 }
+*/
 
-@media (max-width: 600px){
+/*@media only screen and (max-width: 800px){*/
     .slideshow{
+        background-color: 	hsl(186, 40%, 65%);
         height: 50vh;
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;
     }
+/*
     
 }
+*/
 
 .status{
     height: 8%;
