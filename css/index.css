@@ -21,12 +21,16 @@
     color: #272932;
 }
 
+/*Sets the background to teal of color scheme*/
 .bg-teal{
     background-color: #1AC4C7; 
 }
+
+/*Changes the background color of the navbar*/
 .nav-bg{
     background-color:  #E7ECEF;
 }
+
 
 .btn-teal{
     background-color: #1AC4C7;
