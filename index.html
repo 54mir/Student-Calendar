@@ -18,7 +18,7 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body class="index-bg">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light nav-bg justify-content-between">
     <a class="navbar-brand" href="#">NowThis</a>
@@ -46,42 +46,37 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
-        <!--       First carousel slide-->
-        <!--
-        <div class="carousel-item active bg-math">
-          <img src="images/blueCarousel.jpeg" class="d-block w-100" alt="...">
-          <div class="carousel-caption gs-font">
-            <h1 class="caption-header">Math</h1>
-            <h5 class="d-inline caption-time float-left">Start Time: 11:00</h5>
-            <h5 class="d-inline caption-time float-right">End Time: 12:00</h5>
-            <h3 class="caption-description">Math is add and subtractj adsfkjasdfjasdkj fasdkfasdjflasdjfkljsd</h3>
-            <button class="btn btn-outline-light caption-btn">Go to current Event</button>
-          </div>
-        </div>
--->
 
 
 
-
-        <div class="carousel-item active w-100 h-100">
+        <div class="carousel-item active">
           <div class="slideshow text-center">
+            <!--            <div class="status berrio-font"><h5>Go to current event </h5></div>-->
+            <div class="status-current berrio-font">This is What We're Doing Now:</div>
             <div class="slide-header">
               <h1 class="title">math</h1>
-
-
             </div>
-            <div class="slide-time">
-              <h5 class="d-inline float-left mx-2">Start Time:</h5>
-              <h5 class="d-inline float-right mx-2">End Time:</h5>
+            <div class="slide-time align-text-middle">
+              <div class="time-left">
+                <h5 class="time" id="time-left-text">Start Time:</h5>
+              </div>
+
+              <div class="time-right">
+                <h5 class="time" id="time-right-text">End Time:</h5>
+              </div>
+
+              <!-- <h5 class="time d-inline float-left mx-2">Start Time:</h5>
+              <h5 class="time d-inline float-right mx-2">End Time:</h5> -->
             </div>
             <div class="slide-description">
 
-              <h3 class="description">Description here</h3>
+              <h3 class="description">Description here Description here Description here Description here Description
+                here Description here Description here </h3>
 
             </div>
           </div>
         </div>
-          
+
 
 
 
@@ -109,18 +104,18 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Send Your Teacher a Message</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <label for="exampleFormControlTextarea1">Message your teacher here</label>
+          <label for="exampleFormControlTextarea1">Type your message below:</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-teal">Send</button>
         </div>
       </div>
     </div>
