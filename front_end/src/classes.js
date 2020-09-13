@@ -88,13 +88,17 @@ class Classes extends React.Component {
 		const { currentEvent } = this.state
 		if (index === currentEvent) {
 			return
-		} else if (moment().isBefore(moment(startTime))) {
+		} else if (index > currentEvent) {
 			return <div className="status-current berrio-font">
-				This is a future event. <a href="#" onClick={this.handleSelect.bind(this, currentEvent, null)}>Click here</a> to go back to current event.
+				<a href="#" onClick={this.handleSelect.bind(this, currentEvent, null)}>
+					This event is in the future. Click here to go to the current event.
+				</a>
 			</div>
-		} else if (moment().isAfter(moment(endTime))) {
+		} else if (index < currentEvent) {
 			return <div className="status-current berrio-font">
-				This is a past event. <a href="#" onClick={this.handleSelect.bind(this, currentEvent, null)}>Click here</a> to go back to current event.
+				<a href="#" onClick={this.handleSelect.bind(this, currentEvent, null)}>
+					This event has already occured. Click here to go to the current event.
+				</a>
 			</div>
 		}
 	}
