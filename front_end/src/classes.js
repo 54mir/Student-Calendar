@@ -87,17 +87,13 @@ class Classes extends React.Component {
 	statusBox(startTime, endTime, index) {
 		const { currentEvent } = this.state
 		if (index === currentEvent) {
-			return
-		} else if (index > currentEvent) {
-			return <div className="status-current berrio-font">
-				<a href="#" onClick={this.handleSelect.bind(this, currentEvent, null)}>
-					This event is in the future. Click here to go to the current event.
-				</a>
+			return <div className="status-current berrio-font" style={{backgroundColor: "transparent"}}>
+				This is what we're doing now:
 			</div>
-		} else if (index < currentEvent) {
+		} else {
 			return <div className="status-current berrio-font">
 				<a href="#" onClick={this.handleSelect.bind(this, currentEvent, null)}>
-					This event has already occured. Click here to go to the current event.
+					Go back to now.
 				</a>
 			</div>
 		}
@@ -112,8 +108,8 @@ class Classes extends React.Component {
 				let endTime = moment(e.endDateTime).format("hh:mm a")
 				return <Carousel.Item key={i}>
 					<div className="">
-						<div className="slideshow text-center">
-							{ this.statusBox(e.startDateTime, e.endDateTime, i) }
+						{ this.statusBox(e.startDateTime, e.endDateTime, i) }
+						<div className="slideshow text-center carousel-box-shadow">
 							<div className="slide-header">
 								<h1 className="title">{e.title}</h1>
 							</div>
