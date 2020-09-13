@@ -21,11 +21,21 @@
     color: #272932;
 }
 
+/*Sets the background to teal of color scheme*/
 .bg-teal{
     background-color: #1AC4C7; 
 }
+
+/*Changes the background color of the navbar*/
 .nav-bg{
     background-color:  #E7ECEF;
+}
+
+
+.btn-teal{
+    background-color: #1AC4C7;
+    border-color: #1AC4C7; 
+    color:#E7ECEF; 
 }
 .btn-outline-light{
     color: #E7ECEF;
@@ -44,35 +54,16 @@
 }
 
 .v-center{
-    margin-top: 35vh;
+    margin-top: 30vh;
 }
 
-.carousel-caption {
-  position: absolute;
-  right: 15%;
-/*  bottom: 40%;*/
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  height: 90%
-}
-
-div.carousel-caption * {
-    color: #E7ECEF;
-}
-div.carousel-caption caption-header{
-    top: 10%;
-}
 .w-100{
     width: 100%;
     height: 75vh;
 }
 
-.grandstand-font{
-/*    font-family: 'Grandstander', cursive;*/
-font-family: 'Londrina Outline', cursive;
+.intro-font{
+    font-family: 'Londrina Outline', cursive;
     font-size: 10vw
 }
 
@@ -87,83 +78,144 @@ a:hover {
   text-decoration: underline;
 }
 
-
-.caption-description {
-    margin-bottom: 10%;
-    margin-top: 10%;
-}
-
-@media (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .container {
-      padding:0;
       margin:0;
     }
 }
 
 .carousel-position{
-/*    margin-top: 8vh*/
     height: 100%;
-    padding-top: 8vh
+    padding-top: 12vh;
 }
 carousel-inner{
-    height: 100%;
+    height: 800px;
 }
 
+/*
 @media (max-width: 600px){
     .carousel-position {
       height: 75vh;
       margin-top: 
     }
 }
+*/
 
-
-/* .background{
-    background-color: #F05D5E;
-    width: 100%;
-    height: 100%;
-} */
-
-body{
+.index-bg-1{
     background-color: #ddd;
-/*    background-image: url("../images/mathBoard3.jpg") !important;*/
+    background-image: url("./mathBoard2.jpg");
+    background-size: cover;
+    
+}
+
+.index-bg-2{
+    background-color: #ddd;
+    background-image: url("./mathBoard3.jpg");
+    background-size: cover;
+    
 }
 
 .carousel{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 800px;
+    margin: auto
 }
 
-/* .bg-math{
-    background-color: #1AC4C7;
-    /* background-image: url("images/mathBoard3.jpg"); 
-    background-size: cover;
-    
-} */
-
-.gs-font{
-    font-family: 'Grandstander', cursive;
+.berrio-font{
+    font-family: 'Barrio', cursive;
 }
 
 .slideshow{
-    height: 50vh;
-    width: 100%;
     background-color: 	hsl(186, 40%, 65%);
+    height: 500px;
+    width: 100%
+}
+
+@media only screen and (max-width: 800px){
+    .slideshow{
+        height: 50vh;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+}
+
+.status{
+    height: 8%;
+    background-color: hsl(57, 97%, 61%);
+    text-align: right;
+    padding-right: 1%;
+}
+
+.status-current{
+    text-align: left;
+    width: 100%;
+    background-color: yellow;
 }
 .slide-header{
     height: 15%;
     background-color: 	hsl(186, 40%, 80%);
+    position: relative;
+    margin: auto;
 }
 .slide-time{
     height: 10%;
     background-color:   hsl(186, 40%, 75%);
+    position: relative;
+}
+
+.time-left{
+    float: left;
+    display: inline;
+    width: 45%;
+    /* position: relative; */
+    
+}
+.time-right{
+    float: right;
+    display: inline;
+    width: 45%;
+    
+}
+.time{
+    font-family: 'Roboto', sans-serif;    
+    margin: 5px;
+    padding: 10px;    
+
+}
+
+#time-right-text{
+    text-align: right;    
+    margin-right: 5px;
+    
+}
+
+#time-left-text{
+    text-align: left;
+    margin-left: 5px;
 }
 
 .title{
     font-family: 'Grandstander', cursive;
     text-transform: uppercase;
-    font-size: 55px;
+    /* font-size: 55px; */
+    text-align: center;
+    padding: 10px;
+    /* top: 50%; */
+
+    font-size: 3.5rem;
 }
 
 .description{
     font-family: 'Roboto', sans-serif;
+    /* padding-top: 2% */
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+    top: 50%;
+
 }
+
+
 

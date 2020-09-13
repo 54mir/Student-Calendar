@@ -1,15 +1,37 @@
 import React from 'react'
 import axios from 'axios'
 import Carousel from 'react-bootstrap/Carousel'
+import { parseEvents } from './util'
+import moment from 'moment'
+import Loader from 'react-loader'
 import './index.css'
 
+
+const MIN5 = 5 * 1000 * 60
+const bgClasses = ['index-bg-1', 'index-bg-2']
 
 class Classes extends React.Component {
 	constructor(props) {
 		super(props)
-		this.state = {events: [], loading: true}
+		this.state = {events: [], loading: true, currentEvent: 0}
+		this.timeout = null
+		this.moveToCurrent = this.moveToCurrent.bind(this)
+	}
+	componentWillMount() {
+		this.setBg()
 	}
 	componentDidMount() {
+		this.fetchCalendar()
+		this.timeout = setInterval(this.fetchCalendar, MIN5)
+	}
+	componentWillUnmount() {
+		clearInterval(this.timeout)
+	}
+	setBg() {
+		let x = Date.now() % 2
+		document.getElementById('body').classList.add(bgClasses[x])
+	}
+	fetchCalendar() {
 		let options = {
 			method: 'GET',
 			headers: {"Access-Control-Allow-Origin": "*"},
@@ -18,79 +40,75 @@ class Classes extends React.Component {
 		axios(options)
 			.then(res => {
 				console.log(res)
-				let events = this.getEvents(res.data)
-				this.setState({events: events, loading: false})
+				let events = this.getCalendarEvents(res.data)
+				let currentEvent = this.findCurrentEvent(events)
+				this.setState({
+					events: events,
+					loading: false,
+					currentEvent: currentEvent
+				})
 			})
 			.catch(res => {
 				console.log(res)
 			})
 	}
-	getEvents(calendarData) {
-		let currentTime = new Date()
-		let events = this.parseEvents(calendarData)
-		events.sort((a, b) => (a.startDateTime > b.startDateTime))
-		return events
-	}
-	parseEvents(calendar) {
-		let events = []
-		let calendarArr = calendar.split(/\r?\n/)
-		console.log(calendarArr)
-		for (let i = 0; i < calendarArr.length; i++) {
-			if (calendarArr[i].includes("BEGIN:VEVENT")) {
-				let e = {}
-				while (!calendarArr[i].startsWith("END:VEVENT")) {
-					if (calendarArr[i].startsWith("DTSTART")) {
-						e['startDateTime'] = this.splitTime(calendarArr[i])
-					} else if (calendarArr[i].startsWith("DTEND")) {
-						e['endDateTime'] = this.splitTime(calendarArr[i])
-					} else if (calendarArr[i].startsWith("SUMMARY")) {
-						e['title'] = this.splitSummary(calendarArr[i])
-					} else if (calendarArr[i].startsWith("DESCRIPTION")) {
-						let joined = ""
-						while (!calendarArr[i].startsWith("LAST-MODIFIED:")) {
-							joined += calendarArr[i++]
-						}
-						e['description'] = this.splitDescription(joined)
-					}
-					i++
-				}
-				events.push(e)
+	findCurrentEvent(events) {
+		let current = null
+		for (let i = 0; i < events.length; i += 1) {
+			let e = events[i]
+			if (moment().isBetween(moment(e.startDateTime), moment(e.endDateTime))) {
+				current = i
+				break
 			}
 		}
+		return current || events.length - 1
+	}
+	getCalendarEvents(calendarData) {
+		let currentTime = new Date()
+		let events = parseEvents(calendarData)
+		events = events.sort(function (a, b) {
+			return a.startDateTime - b.startDateTime
+		})
 		return events
 	}
-	splitTime(rTime) {
-		let rawTime = rTime.split(':')
-		let dt = rawTime[1].split("T")
-		let date = new Date()
-		let time = dt[1]
-		date.setHours(time.slice(0, 2))
-		date.setMinutes(time.slice(2, 4))
-		return date
+	moveToCurrent(e) {
+		this.setState({activeEvent: this.state.currentEvent})
 	}
-	splitDescription(entry) {
-		return entry.slice(12)
-	}
-	splitSummary(entry) {
-		return entry.split(":", 2)[1]
+	statusBox(startTime, endTime) {
+
+		if (moment().isBefore(moment(startTime))) {
+			return <div className="status-current berrio-font">
+				This is a future event. <a onClick={this.moveToCurrent}>Click here</a> to go back to current event.
+			</div>
+		} else if (moment().isAfter(moment(endTime))) {
+			return <div className="status-current berrio-font">
+				This is a past event. <a onClick={this.moveToCurrent}>Click here</a> to go back to current event.
+			</div>
+		}
 	}
 	populateClasses() {
 		const { events } = this.state
 		if (events.length == 0) {
 			return "No Events"
 		} else {
-			console.log(events)
 			return events.map((e, i) => {
+				let startTime = moment(e.startDateTime).format("hh:mm a")
+				let endTime = moment(e.endDateTime).format("hh:mm a")
 				return <Carousel.Item key={i}>
 					<div className="">
 						<div className="slideshow text-center">
+							{ this.statusBox(e.startDateTime, e.endDateTime) }
 							<div className="slide-header">
 								<h1 className="title">{e.title}</h1>
 							</div>
-							<div className="slide-time">
-								<h5 className="d-inline float-left mx-2">Start Time: {String(e.startDateTime)}</h5>
-								<h5 className="d-inline float-right mx-2">End Time: {String(e.endDateTime)}</h5>
-							</div>
+							<div className="slide-time align-text-middle">
+                <div className="time-left">
+                  <h5 className="time" id="time-left-text">Start Time: {startTime}</h5>
+                </div>
+                <div className="time-right">
+									<h5 className="time" id="time-right-text">End Time: {endTime}</h5>
+                </div>
+              </div>
 							<div className="slide-description">
 								<h3 className="description">
 									<div dangerouslySetInnerHTML={{'__html': e.description}} />
@@ -103,44 +121,19 @@ class Classes extends React.Component {
 		}
 	}
 	render() {
-		return <div>
-			<div className="container carousel-position">
-				<Carousel>
-					{this.populateClasses()}
-				</Carousel>
-			</div>
-		</div>
-	}
-}
-
-
-class Slide extends React.Component {
-	render() {
-		console.log('here')
-		return <Carousel.Item>
-			<div className="w-100 h-100">
-				<div className="slideshow text-center">
-					<div className="slide-header">
-						<h1 className="title">math</h1>
-					</div>
-					<div className="slide-time">
-						<h5 className="d-inline float-left mx-2">Start Time:</h5>
-						<h5 className="d-inline float-right mx-2">End Time:</h5>
-					</div>
-					<div className="slide-description">
-						<h3 className="description">Description here</h3>
-					</div>
+		console.log(this.state)
+		const { currentEvent, loading } = this.state
+		if (loading) {
+			return <Loader />
+		} else {
+			return <div>
+				<div className="container carousel-position">
+					<Carousel>
+						{this.populateClasses()}
+					</Carousel>
 				</div>
 			</div>
-			{/*
-			<Carousel.Caption>
-				<h3>Third slide label</h3>
-				<p>
-					Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-				</p>
-			</Carousel.Caption>
-			*/}
-		</Carousel.Item>
+		}
 	}
 }
 
