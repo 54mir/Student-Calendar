@@ -4,24 +4,44 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,600;1,600&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Niramit:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/teacher.css">
 	<title>Document</title>
 </head>
 
 <body>
 
 	<div class="bg-image">
-		<img src="/images/triangles.jpg">
+
 		<div class="content">
 
 
 			<div class="header">
-				<h1>Welcome Teachers!</h1>
-				<h2>add calendar and emails</h2>
+				<h1 class="title">Welcome Teachers!</h1>
+				<h2 class="subtitle">Add your class calendar and a list of your students’ email addresses</h2>
 			</div>
 			<div class="form">
-				<p>Form item 1:</p>
-				<p>Form item 2:</p>
-				<p>Form item 3:</p>
+				<div class="form-content">
+					<p>Link to your public calendar (ical):</p>
+					<input class="input-full"></input>
+					<p>-- or --</p>
+					<img src="images/google_calendar.png" class="google-calendar">
+					<p>Student e-mail addresses:</p>
+					<div class="input-add">
+						<input class="input-med"></input>
+						<button>add</button>
+					</div>
+					<textarea></textarea>
+				</div>
 
 			</div>
 		</div>

@@ -1,0 +1,55 @@
+body{
+	background-image: url("/images/triangles.jpg");
+	background-size: cover;
+	font-family: 'Niramit', sans-serif;
+	
+}
+
+.content{
+	background-color: blue;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: auto;
+}
+
+.header{
+	background-color: aqua;
+	
+
+}
+
+.title, .subtitle{
+	text-align: center;
+	color: #333;
+}
+
+.title{
+	font-family: 'Barrio', cursive;
+	
+    text-transform: uppercase;
+	padding-top: 100px;
+	font-size: 3.5rem;
+
+}
+
+.subtitle{
+	padding-bottom: 50px;
+	
+	font-size: 1.5rem;
+}
+
+.google-calendar{
+	width: 150px;
+}
+
+.form{
+	background-color: red;
+
+}
+
+.form-content{
+	margin: auto;
+	background-color: blueviolet;
+	width: 60%;
+}
+
