@@ -73,7 +73,8 @@ class Classes extends React.Component {
 				minI = i
 			}
 		}
-		return current || minI
+		return 1
+		//return current || minI
 	}
 	getCalendarEvents(calendarData) {
 		let currentTime = new Date()
@@ -84,17 +85,16 @@ class Classes extends React.Component {
 		return events
 	}
 	statusBox(startTime, endTime, index) {
-		const { currentIndex } = this.state
-		console.log(index, currentIndex)
-		if (index === currentIndex) {
+		const { currentEvent } = this.state
+		if (index === currentEvent) {
 			return
 		} else if (moment().isBefore(moment(startTime))) {
 			return <div className="status-current berrio-font">
-				This is a future event. <a href="#" onClick={this.handleSelect.bind(this, currentIndex, null)}>Click here</a> to go back to current event.
+				This is a future event. <a href="#" onClick={this.handleSelect.bind(this, currentEvent, null)}>Click here</a> to go back to current event.
 			</div>
 		} else if (moment().isAfter(moment(endTime))) {
 			return <div className="status-current berrio-font">
-				This is a past event. <a href="#" onClick={this.handleSelect.bind(this, currentIndex, null)}>Click here</a> to go back to current event.
+				This is a past event. <a href="#" onClick={this.handleSelect.bind(this, currentEvent, null)}>Click here</a> to go back to current event.
 			</div>
 		}
 	}

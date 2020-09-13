@@ -36,7 +36,9 @@ class NavigationBar extends React.Component {
 	showLogout() {
 		const { location } = this.props
 		if (location && location.pathname !== "/") {
-			return <Nav.Link href="/">Log Out</Nav.Link>
+			return <Nav className="justify-content-end">
+				<Nav.Link href="/">Log Out</Nav.Link>
+			</Nav>
 		}
 	}
 	showTeacher() {
