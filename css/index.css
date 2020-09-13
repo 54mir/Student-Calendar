@@ -53,18 +53,6 @@
     margin-top: 30vh;
 }
 
-.carousel-caption {
-  position: absolute;
-  right: 15%;
-/*  bottom: 40%;*/
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  height: 90%
-}
-
 div.carousel-caption * {
     color: #E7ECEF;
 }
@@ -93,12 +81,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
-.caption-description {
-    margin-bottom: 10%;
-    margin-top: 10%;
-}
-
 @media (max-width: 600px) {
     .container {
       padding:0;
@@ -121,13 +103,6 @@ carousel-inner{
       margin-top: 
     }
 }
-
-
-/* .background{
-    background-color: #F05D5E;
-    width: 100%;
-    height: 100%;
-} */
 
 .index-bg{
     background-color: #ddd;
