@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
-  <title>App</title>
+  <title>Home |</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -17,11 +16,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
     rel="stylesheet">
 </head>
-
 <body class="index-bg">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light nav-bg justify-content-between">
-    <a class="navbar-brand" href="#">NowThis</a>
+  <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+    <a class="navbar-brand" href="index.html">NowThis</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,13 +27,14 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-outline-teal my-2 my-sm-0 mr-2" data-toggle="modal" data-target="#exampleModal"
+        <button class="btn btn-outline-teal my-2 my-sm-0 mr-2" data-toggle="modal" data-target="#messageTeacher"
           type="button">Message Teacher</button>
         <a class="mr-2" href="intro.html">Log Out</a>
       </form>
     </div>
   </nav>
-  <!-- <div class="background w-100 h-100"> -->
+    
+<!--Carousel of subjects-->
   <div class="container carousel-position">
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -45,40 +44,33 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
+        
       <div class="carousel-inner">
-
-
-
+    <!-- Carousel Slide-->
         <div class="carousel-item active">
           <div class="slideshow text-center">
             <!--            <div class="status berrio-font"><h5>Go to current event </h5></div>-->
             <div class="status-current berrio-font">This is What We're Doing Now:</div>
+            <!--Name of Subject-->
             <div class="slide-header">
               <h1 class="title">math</h1>
             </div>
+            <!--Start and End time for Activities-->
             <div class="slide-time align-text-middle">
               <div class="time-left">
                 <h5 class="time" id="time-left-text">Start Time:</h5>
               </div>
-
               <div class="time-right">
                 <h5 class="time" id="time-right-text">End Time:</h5>
               </div>
-
-              <!-- <h5 class="time d-inline float-left mx-2">Start Time:</h5>
-              <h5 class="time d-inline float-right mx-2">End Time:</h5> -->
             </div>
+            <!-- Description of Subject Activities   -->
             <div class="slide-description">
-
               <h3 class="description">Description here Description here Description here Description here Description
                 here Description here Description here </h3>
-
             </div>
           </div>
         </div>
-
-
-
 
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -91,27 +83,23 @@
       </a>
     </div>
 
-    <!--        <img class="w-100" src="images/gray.png">-->
   </div>
-  <!-- </div> -->
 
 
-
-
-  <!-- Modal for Message-->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  <!-- Modal for Messaging Teacher-->
+  <div class="modal fade" id="messageTeacher" tabindex="-1" role="dialog" aria-labelledby="messageTeacherLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Send Your Teacher a Message</h5>
+          <h5 class="modal-title" id="messageTeacherLabel">Send Your Teacher a Message</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <label for="exampleFormControlTextarea1">Type your message below:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="formControlteacherMessage">Type your message below:</label>
+          <textarea class="form-control" id="formControlteacherMessage" rows="3"></textarea>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
