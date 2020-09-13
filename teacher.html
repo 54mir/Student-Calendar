@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
       <!--Project CSS -->
       <link rel="stylesheet" href="css/teacher.css">
+      <link rel="stylesheet" href="css/index.css">
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,600;1,600&display=swap"
 		rel="stylesheet">
@@ -18,9 +19,24 @@
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Niramit:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-	<div class="bg-image">
-		<div class="content">
+<body class="bg-image">
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+        <a class="navbar-brand" href="index.html">NowThis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0">
+            <a class="mr-2" href="intro.html">Log Out</a>
+          </form>
+        </div>
+      </nav>
+		
+<!-- Form-->
+      <div class="content">
 			<div class="header">
 				<h1 class="title">Welcome Teachers!</h1>
 				<h2 class="subtitle">Add your class calendar and a list of your students’ email addresses</h2>
@@ -43,6 +59,5 @@
                 </div>
 			</div>
 		</div>
-	</div>
 </body>
 </html>

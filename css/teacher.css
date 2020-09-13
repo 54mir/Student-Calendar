@@ -28,7 +28,6 @@ body{
 
 .title{
 	font-family: 'Barrio', cursive;
-	
     text-transform: uppercase;
 	padding-top: 100px;
 	font-size: 3.5rem;
@@ -37,7 +36,6 @@ body{
 
 .subtitle{
 	padding-bottom: 50px;
-	
 	font-size: 1.5rem;
 }
 
@@ -48,7 +46,6 @@ body{
 
 .form{
 	/* background-color: red; */
-
 }
 
 .form-content{
