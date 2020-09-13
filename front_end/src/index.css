@@ -1,0 +1,169 @@
+
+/*Color Scheme Definitions*/
+.red {
+    color: #F05D5E;
+}
+.light-blue{
+    color: #E7ECEF;
+}
+.blue-green{
+    color: #1AC4C7;
+}
+.font-black{
+    color: #272932;
+}
+.pale-brown{
+    color: #D8A47F;
+}
+
+/*Sets the color of font on all pages to color-scheme black*/
+* {
+    color: #272932;
+}
+
+.bg-teal{
+    background-color: #1AC4C7; 
+}
+.nav-bg{
+    background-color:  #E7ECEF;
+}
+.btn-outline-light{
+    color: #E7ECEF;
+    border-color: #E7ECEF;
+}
+
+.btn-outline-teal{
+    color: #1AC4C7;
+    border-color: #1AC4C7;
+}
+
+.btn-outline-teal:hover {
+  color: #E7ECEF;
+  background-color: #1AC4C7;
+  border-color: #1AC4C7;
+}
+
+.v-center{
+    margin-top: 35vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+/*  bottom: 40%;*/
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  height: 90%
+}
+
+div.carousel-caption * {
+    color: #E7ECEF;
+}
+div.carousel-caption caption-header{
+    top: 10%;
+}
+.w-100{
+    width: 100%;
+    height: 75vh;
+}
+
+.grandstand-font{
+/*    font-family: 'Grandstander', cursive;*/
+font-family: 'Londrina Outline', cursive;
+    font-size: 10vw
+}
+
+a {
+  color: #1AC4C7;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #D8A47F;
+  text-decoration: underline;
+}
+
+
+.caption-description {
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+@media (max-width: 600px) {
+    .container {
+      padding:0;
+      margin:0;
+    }
+}
+
+.carousel-position{
+/*    margin-top: 8vh*/
+    height: 100%;
+    padding-top: 8vh
+}
+carousel-inner{
+    height: 100%;
+}
+
+@media (max-width: 600px){
+    .carousel-position {
+      height: 75vh;
+      margin-top: 
+    }
+}
+
+
+/* .background{
+    background-color: #F05D5E;
+    width: 100%;
+    height: 100%;
+} */
+
+body{
+    background-color: #ddd;
+/*    background-image: url("../images/mathBoard3.jpg") !important;*/
+}
+
+.carousel{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* .bg-math{
+    background-color: #1AC4C7;
+    /* background-image: url("images/mathBoard3.jpg"); 
+    background-size: cover;
+    
+} */
+
+.gs-font{
+    font-family: 'Grandstander', cursive;
+}
+
+.slideshow{
+    height: 50vh;
+    width: 100%;
+    background-color: 	hsl(186, 40%, 65%);
+}
+.slide-header{
+    height: 15%;
+    background-color: 	hsl(186, 40%, 80%);
+}
+.slide-time{
+    height: 10%;
+    background-color:   hsl(186, 40%, 75%);
+}
+
+.title{
+    font-family: 'Grandstander', cursive;
+    text-transform: uppercase;
+    font-size: 55px;
+}
+
+.description{
+    font-family: 'Roboto', sans-serif;
+}
+
