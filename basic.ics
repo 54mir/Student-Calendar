@@ -348,4 +348,57 @@ STATUS:CONFIRMED
 SUMMARY:Live Phonics Lesson
 TRANSP:OPAQUE
 END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T223000
+DTEND;TZID=America/Chicago:20200911T233000
+RRULE:FREQ=DAILY
+DTSTAMP:20200912T035058Z
+UID:5njbulek492m310aq9knpofcqk@google.com
+CREATED:20200912T031132Z
+DESCRIPTION:Come join us live for Phonics Instruction on Google Meets!<br><
+ br><a href="https://meet.google.com/tiy-tkqc-rrs" id="ow653" __is_owner="tr
+ ue">https://meet.google.com/tiy-tkqc-rrs</a>This event has a video call
+ .Join: https://meet.google.com/tiy-tkqc-rrs
+LAST-MODIFIED:20200912T031234Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Live Phonics Lesson
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200912T233000
+DTEND;TZID=America/Chicago:20200912T235900
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=MO,SA,WE
+DTSTAMP:20200912T035058Z
+UID:0vbk8gm1un34vp878hoclc4fl9@google.com
+CREATED:20200912T032124Z
+DESCRIPTION:Join Ms. Newman for live SEL! Make sure to bring your problem-s
+ olving strategies, and be ready to show all the ways you can be kind to ot
+ hers and yourself!<br><br><a href="https://meet.google.com/tiy-tkqc-rrs" id
+ ="ow4498" __is_owner="true">https://meet.google.com/tiy-tkqc-rrs</a>
+LAST-MODIFIED:20200912T032124Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Live SEL Lesson
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20200911T000000
+DTEND;TZID=America/Chicago:20200911T011500
+RRULE:FREQ=WEEKLY;WKST=SU;BYDAY=FR,SU
+DTSTAMP:20200912T035058Z
+UID:78nv2h9mvuvk0gv18v5uqefidp@google.com
+CREATED:20200912T031842Z
+DESCRIPTION:Join us for live math instruction!<br><br><a href="https://meet
+ .google.com/tiy-tkqc-rrs" id="ow3931" __is_owner="true">https://meet.google
+ .com/tiy-tkqc-rrs</a>
+LAST-MODIFIED:20200912T031842Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Live Math Lesson
+TRANSP:OPAQUE
+END:VEVENT
 END:VCALENDAR

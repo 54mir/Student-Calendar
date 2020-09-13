@@ -115,7 +115,7 @@ carousel-inner{
 /*Sets background for carousel slide*/
 .slideshow{
     background-color: 	hsl(186, 40%, 65%);
-    height: 500px;
+    height: 650px;
     width: 100%
 }
 
@@ -141,16 +141,17 @@ carousel-inner{
     text-align: left;
     width: 100%;
     background-color: greenyellow;
+    font-size: 1.4rem;
 }
 
 .slide-header{
-    height: 15%;
+    height: 11%;
     background-color: 	hsl(186, 40%, 80%);
     position: relative;
     margin: auto;
 }
 .slide-time{
-    height: 10%;
+    height: 7%;
     background-color:   hsl(186, 40%, 75%);
     position: relative;
 }
@@ -169,7 +170,7 @@ carousel-inner{
 .time{
     font-family: 'Roboto', sans-serif;    
     margin: 5px;
-    padding: 10px;    
+    padding: 7px;    
 }
 
 #time-right-text{
@@ -187,7 +188,7 @@ carousel-inner{
     text-transform: uppercase;
     /* font-size: 55px; */
     text-align: center;
-    padding: 10px;
+    padding: 7px;
     /* top: 50%; */
     font-size: 3.5rem;
 }
