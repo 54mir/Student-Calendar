@@ -93,9 +93,16 @@ carousel-inner{
 }
 
 /*Sets the background of the index page*/
-.index-bg{
+.index-bg-1{
     background-color: #ddd;
     background-image: url("../images/mathBoard2.jpg");
+    background-size: cover;
+    
+}
+
+.index-bg-2{
+    background-color: #ddd;
+    background-image: url("./mathBoard3.jpg");
     background-size: cover;
     
 }
@@ -143,6 +150,7 @@ carousel-inner{
 .status-current{
     text-align: left;
     width: 100%;
+    background-color: yellow;
     /* background-color: greenyellow; */
     font-size: 1.4rem;
 }

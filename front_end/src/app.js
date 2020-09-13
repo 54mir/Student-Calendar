@@ -12,6 +12,7 @@ import Nav from './nav'
 
 class App extends React.Component {
 	render() {
+		console.log(this.props)
 		let account = ""
 		return <Router>
 			<Nav account={account}/>
@@ -23,6 +24,9 @@ class App extends React.Component {
 					<Classes />
 				</Route>
 				<Route exact path='/teacher' >
+					<Teacher />
+				</Route>
+				<Route path="/teacher/signup">
 					<Teacher />
 				</Route>
 			</Switch>

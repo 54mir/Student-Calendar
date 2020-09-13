@@ -13,9 +13,15 @@ const bgClasses = ['index-bg-1', 'index-bg-2']
 class Classes extends React.Component {
 	constructor(props) {
 		super(props)
-		this.state = {events: [], loading: true, currentEvent: 0}
+		this.state = {
+			events: [],
+			loading: true,
+			currentEvent: 0,
+			index: 0,
+			direction: null
+		}
 		this.timeout = null
-		this.moveToCurrent = this.moveToCurrent.bind(this)
+		this.handleSelect = this.handleSelect.bind(this)
 	}
 	componentWillMount() {
 		this.setBg()
@@ -39,12 +45,12 @@ class Classes extends React.Component {
 		}
 		axios(options)
 			.then(res => {
-				console.log(res)
 				let events = this.getCalendarEvents(res.data)
 				let currentEvent = this.findCurrentEvent(events)
 				this.setState({
 					events: events,
 					loading: false,
+					index: currentEvent,
 					currentEvent: currentEvent
 				})
 			})
@@ -54,14 +60,20 @@ class Classes extends React.Component {
 	}
 	findCurrentEvent(events) {
 		let current = null
+		let min = Math.min
+		let minI = 0
 		for (let i = 0; i < events.length; i += 1) {
 			let e = events[i]
 			if (moment().isBetween(moment(e.startDateTime), moment(e.endDateTime))) {
 				current = i
 				break
 			}
+			if (moment().diff(moment(e.startDateTime)) < min) {
+				min = moment().diff(moment(e.startDateTime))
+				minI = i
+			}
 		}
-		return current || events.length - 1
+		return current || minI
 	}
 	getCalendarEvents(calendarData) {
 		let currentTime = new Date()
@@ -71,18 +83,18 @@ class Classes extends React.Component {
 		})
 		return events
 	}
-	moveToCurrent(e) {
-		this.setState({activeEvent: this.state.currentEvent})
-	}
-	statusBox(startTime, endTime) {
-
-		if (moment().isBefore(moment(startTime))) {
+	statusBox(startTime, endTime, index) {
+		const { currentIndex } = this.state
+		console.log(index, currentIndex)
+		if (index === currentIndex) {
+			return
+		} else if (moment().isBefore(moment(startTime))) {
 			return <div className="status-current berrio-font">
-				This is a future event. <a onClick={this.moveToCurrent}>Click here</a> to go back to current event.
+				This is a future event. <a href="#" onClick={this.handleSelect.bind(this, currentIndex, null)}>Click here</a> to go back to current event.
 			</div>
 		} else if (moment().isAfter(moment(endTime))) {
 			return <div className="status-current berrio-font">
-				This is a past event. <a onClick={this.moveToCurrent}>Click here</a> to go back to current event.
+				This is a past event. <a href="#" onClick={this.handleSelect.bind(this, currentIndex, null)}>Click here</a> to go back to current event.
 			</div>
 		}
 	}
@@ -97,7 +109,7 @@ class Classes extends React.Component {
 				return <Carousel.Item key={i}>
 					<div className="">
 						<div className="slideshow text-center">
-							{ this.statusBox(e.startDateTime, e.endDateTime) }
+							{ this.statusBox(e.startDateTime, e.endDateTime, i) }
 							<div className="slide-header">
 								<h1 className="title">{e.title}</h1>
 							</div>
@@ -120,15 +132,25 @@ class Classes extends React.Component {
 			})
 		}
 	}
+	handleSelect(selectedIndex, e) {
+		this.setState({
+			index: selectedIndex || this.state.currentEvent,
+			direction: e && e.direction || null,
+		});
+	}
 	render() {
-		console.log(this.state)
-		const { currentEvent, loading } = this.state
+		const { currentEvent, loading, index, direction } = this.state
 		if (loading) {
 			return <Loader />
 		} else {
 			return <div>
 				<div className="container carousel-position">
-					<Carousel>
+					<Carousel
+						interval={null}
+						activeIndex={index}
+						direction={direction}
+						onSelect={this.handleSelect}
+					>
 						{this.populateClasses()}
 					</Carousel>
 				</div>
